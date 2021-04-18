@@ -13,7 +13,6 @@ Django authentication backend that authenticates against an LDAP service from an
 
 AUTH_LDAP_GROUP_TYPE = NestedActiveDirectoryGroupType()
 
-# Set up the basic group parameters.
 AUTH_LDAP_GROUP_SEARCH = LDAPSearch(
     "OU=group1,DC=host,DC=com",
     ldap.SCOPE_SUBTREE,
